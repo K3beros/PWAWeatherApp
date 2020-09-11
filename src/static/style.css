@@ -1,0 +1,114 @@
+.f-p {
+    font-style: italic;
+}
+
+/* 
+screen width - 114rem;
+horizontal gutter - 6rem;
+vertical gutter - 8 rem
+
+*/
+
+*,
+* ::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/* html {
+  font-size: 62.5%; 
+} */
+
+body {
+    box-sizing: border-box; 
+}
+
+.row {
+    max-width: 114rem;
+    margin: 0, auto;
+    margin-top: 50px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+ }
+
+ .row:not(:last-child) {
+    margin-bottom: 8rem; 
+}
+
+ .row [class^="col-"] {
+    float: left; 
+}
+
+.row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2);
+}
+
+.row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3);
+    margin-left: 10px;
+}
+
+.row .col-2-of-3 {
+    width: calc((100% - 6rem) / 2);
+}
+
+.row .col-1-of-4 {
+
+}
+
+.row .col-2-of-4 {
+
+}
+
+.row .col-3-of-4 {
+    width: calc((100% - 6rem) / 2);
+}
+
+.test-1 {
+    background-color: red;
+}
+
+.test-2 {
+   background-color: green; 
+}
+
+.test-3 {
+    background-color: blue;
+}
+
+.u-margin-bottom-big {
+    margin-bottom: 4rem;
+}
+
+.u-margin-bottom-small {
+    margin-bottom: 2rem;
+}
+
+.row .col-1-of-3:nth-child(2) {
+    width: 32rem;
+}
+
+.card {
+    float: left;
+}
+
+.card:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.card-div {
+    margin: auto;
+    background-color: orange;
+    /* text-align: center; */
+}
+
+.feature-box {
+    border-radius: 3px;
+    padding: 1rem;
+
+}
